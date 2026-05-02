@@ -7,9 +7,13 @@ I used the TextBlob library to conduct the sentiment analysis.
 Why TextBlob? TextBlob is well suited for introductory-level sentiment analysis of formal and objective texts, in contrast to tools such as VADER, which are primarily designed for social media and informal language. TextBlob provides a simple polarity score ranging from −1.0 to +1.0 based on standard linguistic lexicons. This approach allowed me to assess sentiment at the paragraph level and avoid the “saturation effect” that can occur when a long document is analysed as a single block of text.
 # 3. Interpretation of paragraph-level results
 By splitting the text into individual paragraphs, the analysis reveals a clear narrative structure in the ECB’s communication.
+
 Tone:
+
 Sentiment scores remain largely neutral in the opening paragraphs, which focus on factual decisions by the Governing Council regarding interest rates and the end-of-year economic assessment. The tone becomes increasingly cautious, with lower polarity scores, in the middle and later paragraphs. This shift corresponds to sections where the Governing Council discusses risks to the economic outlook and heightened uncertainty associated with the macroeconomic transition into 2026.
+
 Topic Focus:
+
 Using word frequency analysis combined with customised stop-word filtering (removing terms such as “inflation”, “monetary”, and “policy” to highlight underlying themes), the results show a strong and consistent emphasis on balancing economic growth, price stability, and expectations. Paragraph-level segmentation demonstrates that the ECB deliberately moves from a declarative and factual tone when presenting monetary policy decisions to a more analytical and cautious tone when addressing potential economic headwinds for the year ahead.
 ## Repository Structure
 * `ecb_press_conference.txt`: The cleaned text file from the 18 December 2025 statement.
